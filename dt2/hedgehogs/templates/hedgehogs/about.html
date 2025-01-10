@@ -1,0 +1,37 @@
+{% extends 'hedgehogs/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center mt-4">About Hedgehog World</h1>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <img src="{% static 'hedgehogs/image/hedgehog_about.jpg' %}" alt="Adorable Hedgehog" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <p>
+                Welcome to <strong>Hedgehog World</strong>, a website dedicated to one of the most charming and fascinating creatures on Earth — hedgehogs!
+                Here, we celebrate their adorable looks, quirky behavior, and unique role in nature.
+            </p>
+            <p>
+                Our goal is to provide information, inspiration, and joy to all hedgehog lovers out there. Whether you are a proud hedgehog owner,
+                a nature enthusiast, or simply someone who enjoys cute animals, this is the place for you.
+            </p>
+            <h3>What You'll Find Here:</h3>
+            <ul>
+                <li>Stunning photo galleries of hedgehogs.</li>
+                <li>Interesting facts about their habits and habitat.</li>
+                <li>Tips on caring for pet hedgehogs.</li>
+                <li>A welcoming community of fellow hedgehog fans!</li>
+            </ul>
+            <p>
+                We believe hedgehogs deserve to be appreciated and protected, so we aim to spread awareness about these amazing creatures.
+            </p>
+            <p>
+                Thank you for visiting! Explore the site, enjoy the content, and don't forget to share your love for hedgehogs with your friends and family!
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

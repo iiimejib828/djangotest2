@@ -1,0 +1,36 @@
+{% extends 'hedgehogs/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container text-center">
+    <h1>Hedgehog Gallery</h1>
+    <p>Here are some adorable hedgehogs for you!</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'hedgehogs/image/hedgehog1.jpg' %}" class="card-img-top" alt="Hedgehog 1">
+                <div class="card-body">
+                    <p class="card-text">This is Hedgehog #1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'hedgehogs/image/hedgehog2.jpg' %}" class="card-img-top" alt="Hedgehog 2">
+                <div class="card-body">
+                    <p class="card-text">This is Hedgehog #2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'hedgehogs/image/hedgehog3.jpg' %}" class="card-img-top" alt="Hedgehog 3">
+                <div class="card-body">
+                    <p class="card-text">This is Hedgehog #3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
